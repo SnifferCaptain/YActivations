@@ -20,6 +20,10 @@ SnakeB <br/><br/><br/><br/><br/>
 ![image](https://github.com/user-attachments/assets/51a8596a-3c5d-4a0e-8b19-a45b4d4286ab)
 
 SnakeC <br/><br/><br/><br/><br/>
+
+![image](https://github.com/user-attachments/assets/015c170a-e75f-46c6-a5ca-3e407807cf16)
+DytSnakeB <br/><br/><br/><br/><br/>
+
 ## reason
 I've notice that fashion activations like SiLU, GeLU, ReLU as well as Mish are the kind of self-gated activations. They have one in common which is they are closely zero while the input
  is negative. According to the paper **Searching for Activation Functions** (which Introduced swish activation), they found that most input values of the swish activation are in negative part, which in my opinion 
