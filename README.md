@@ -45,6 +45,11 @@ f(x0, x1) --> x:
     temp0 = silu(temp0)
     x = temp0 + x1
     return x
+
+sfrelu(x) --> x:
+    y = dwconv(x) # shape same as x
+    x = f(x, y)
+    return x
 ```
 ### their graphs are as follows:
 ![image](https://github.com/user-attachments/assets/47993677-09ff-453b-b5fb-fb00961c8e83)
