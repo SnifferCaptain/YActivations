@@ -63,3 +63,13 @@ f(x0, x1) --> x:
     return x
 ```
 I simply replace relu with silu, which is considered a "soft" version of relu.
+you can also call it FSiLU
+## SoftResial
+as the name suggest, it's the soft version of "+", which is also called "reslink", who create the empire of real DEEP learning.
+and I somehow managed to create a soft version of this.
+<img width="938" height="831" alt="image" src="https://github.com/user-attachments/assets/92937044-84a8-4c34-a48c-97aab8eeb516" />
+just like everything else, it can be described as this:
+```
+y = silu(x0 + x1) - silu(x0 - x1) + x1
+```
+that's all, easy
