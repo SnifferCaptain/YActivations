@@ -73,3 +73,13 @@ just like everything else, it can be described as this:
 y = silu(x0 + x1) - silu(x0 - x1) + x1
 ```
 that's all, easy
+## SoftMultiply
+soft version of operator "*".
+when x0 >> x1, return x1
+when x0 << x1, return x0
+when x0 ~~ x1, return x0 * x1
+<img width="1172" height="956" alt="image" src="https://github.com/user-attachments/assets/3b032285-eb2d-46a1-8597-3e012533c6ef" />
+function:
+```
+y = silu(-x0)*silu(-x1) + x0 - silu(x0 - x1)
+```
